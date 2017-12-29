@@ -1,12 +1,17 @@
 ﻿using System;
+using System.IO;
 
 namespace CoreApp
 {
-    class Program
+	
+	class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-        }
+			GetFilesList objFileList = new GetFilesList(@"c:\");
+			objFileList.GetSummary();
+			objFileList.GetDetails();
+			Console.ReadLine();
+		}
     }
 }
