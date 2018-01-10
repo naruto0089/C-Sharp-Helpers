@@ -5,4 +5,9 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\CardShuffeling\CardShuffeling\CardGame\CardGame.csproj" />
+    <ProjectReference Include="..\FileLister\FileLister.csproj" />
+  </ItemGroup>
+
 </Project>

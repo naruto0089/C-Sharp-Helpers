@@ -1,31 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
-namespace CoreApp
+namespace FileLister
 {
-	public class GetFilesList
-	{
+	public class GetFileList
+    {
 		public static string _path { get; set; }
 		public static string _pattern { get; set; }
 
 		private string[] fpaths;
 
-		public GetFilesList()
+		public GetFileList()
 		{
 			_path = ".";
 			_pattern = "*";
 			fpaths = Directory.GetFiles(_path, _pattern);
 		}
-		public GetFilesList(string path)
+		public GetFileList(string path)
 		{
 			_path = path;
 			_pattern = "*";
 			fpaths = Directory.GetFiles(_path, _pattern);
 		}
 
-		public GetFilesList(string path, string pattern)
+		public GetFileList(string path, string pattern)
 		{
 			_path = path;
 			_pattern = pattern;
@@ -65,5 +63,5 @@ namespace CoreApp
 
 
 	}
-
 }
+
